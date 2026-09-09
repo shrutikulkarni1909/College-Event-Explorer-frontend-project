@@ -15,4 +15,10 @@ features:
 5) Students can register for interested event
 
 link to the website:
-https://shravaneejoshi.github.io/College-Event-Explorer-frontend-project/
+https://shrutikulkarni1909.github.io/College-Event-Explorer-frontend-project/
+
+# Contributors 
+- Shravani Joshi
+- Samruddhi Garge
+- Shruti Kulkarni
+
