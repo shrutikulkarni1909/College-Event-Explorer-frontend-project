@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+}
+
+.navbar-center {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-center a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 10px;
+}
+
+.login-button, .host-button {
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.login-button {
+    color: #333333;
+}
+
+.host-button {
+    background-color: #8c52ff;
+    color: white;
+}
+
+.hero {
+    background-image: url(hackathon.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #f8f9fa;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+   /* backdrop-filter: blur(5px);*/
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    transition: all 0.3s ease;
+}
+
+.hero h1:hover {
+    color: #79a6b5;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.action-buttons {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.button-primary {
+    background-color: #6920c2;
+}
+
+.button-secondary {
+    background-color: #6c757d;
+}
+
+.event-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    width: 65%;
+}
+
+.right-column {
+    width: 30%;
+}
+
+.info-box {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+h3, h4 {
+    color: #333333;
+    margin-top: 0;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.organizer {
+    display: flex;
+    align-items: center;
+}
+
+.similar-events {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.event-card {
+    width: 48%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.event-card h4 {
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar-left, .navbar-center, .navbar-right {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .navbar-center {
+        gap: 10px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .event-info {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .similar-events {
+        flex-direction: column;
+    }
+
+    .event-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

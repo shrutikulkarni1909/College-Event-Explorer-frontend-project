@@ -1,0 +1,116 @@
+/* General Navbar Styling */
+.navbar {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 10px 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Adjust logo size */
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 10px; /* Space between the logo and the brand name */
+    color: #333;
+}
+
+/* Adjust margin between brand name and navigation links */
+.navbar-links {
+    display: flex;
+    gap: 20px; /* Adjust the space between the links */
+    margin-left: 2.5cm; /* Adjust the gap between "CampusTrends" and the links */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #b84cdc; /* Change link color on hover */
+}
+
+/* Right section (Login and Host) */
+.navbar-right {
+    display: flex;
+    gap: 15px;
+}
+
+.login-button, .signup-button {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: #333;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    color: #b74ae2;
+}
+
+.signup-button {
+    background-color: #935be1; /* Button background color */
+    color: white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #4e1a6c;
+}
+
+/* Responsive Navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar-left, .navbar-right {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Responsive Navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar-left, .navbar-right {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+

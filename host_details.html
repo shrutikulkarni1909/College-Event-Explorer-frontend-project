@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>host signup_details</title>
+    <link rel="stylesheet" href="styleddd.css">
+    <link rel="stylesheet" href="nav-style.css">
+</head>
+<body>
+    <header class="container">
+        <!-- Header Section -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <!-- Logo and Brand Name -->
+                <a href="#" class="logo">
+                    <img src="logo.jpg" alt="CampusTrends">
+                </a>
+                <span class="brand-name">CampusTrends</span>
+        
+                <!-- Navigation Links (Left-Aligned) -->
+                <div class="navbar-links">
+                    <a href="index.html">Home</a>
+                    <a href="#">Latest Events</a>
+                    <a href="#">Featured Events</a>
+                </div>
+            </div>
+        
+            <div class="navbar-right">
+                <!-- Login and Host buttons (Right Aligned) -->
+                <a href="student.html" class="login-button">Login</a>
+                <a href="host_login.html" class="signup-button">Host</a>
+            </div>
+        </nav>
+        
+    </header> 
+
+
+   
+        
+       <div class="cont">
+
+        <div >
+            <h2><span class="padded-text">HOST DETAILS</span></h2>
+        </div>
+       
+        <form action="/post" method="post">
+            <label for="hname" ><span class="padded-text">Host Name </span></label><br><br>
+            <input type ="text" id="hname" name="hname"  placeholder="Enter your Name " class="rounded-input-button"></br><br>  <br>
+          
+
+            <label for="clgname"><span class="padded-text">College Name</span></label><br><br>
+            <input type="text" id="clgname" name="clgname" placeholder="Enter your college name" class="rounded-input-button"><br><br><br>
+    
+            <label for="organizer"><span class="padded-text">Event Organization name</span></label><br><br>
+            <input type="text" id="organizer" name="organizer" placeholder="Enter name of Event Organization" class="rounded-input-button">
+            
+            <a href="signup_feedback.html">
+                <button type="button" class="purple-rounded-submit">Submit</button>
+            </a>
+               
+          
+    </form>
+       </div>
+    
+</body>
+</html>

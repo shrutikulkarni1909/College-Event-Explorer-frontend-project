@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; 
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; 
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #333;
+}
+
+
+.navbar-links {
+    display: flex;
+    gap: 20px; /* Adjust the space between the links */
+    margin-left: 2.5cm; /* Adjust the gap between "CampusTrends" and the links */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #b84cdc; /* Change link color on hover */
+}
+
+/* Right section (Login and Host) */
+.navbar-right {
+    display: flex;
+    gap: 15px;
+}
+
+.login-button, .signup-button {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: #333;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    color: #b74ae2;
+}
+
+.signup-button {
+    background-color: #935be1; /* Button background color */
+    color: white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #4e1a6c;
+}
+
+/* Responsive Navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar-left, .navbar-right {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Responsive Navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar-left, .navbar-right {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.img-bg{
+    background-image: url('img5.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center;
+    color: white;
+    /*position: relative;*/
+}
+
+.img-bg img{
+    display:flex;
+}
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center;
+    padding: 0 100px; 
+   
+    position: relative;
+     color: white;
+    
+}
+
+
+.hero-left {
+    flex: 0.5;
+    padding: 20px;
+    height: auto; /* Adjusts height based on content */
+    width: auto; /* Auto width so it adjusts to content size */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is part of the total width */
+    /* Border removed */
+}
+
+.hero-title {
+    font-size: 5rem; /* Slightly reduce font size if necessary to fit the box */
+    font-weight: bolder;
+    text-shadow: 3px 3px 1px rgb(63, 14, 92);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to right, rgb(254, 251, 255), #f7b5f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotateX(15deg); /* Tilt the text upwards */
+    text-align: center;
+    animation: textAnimation 5s ease-in-out infinite; /* Apply animation */
+}
+
+@keyframes textAnimation {
+    0%, 10% {
+        opacity: 1; /* The text is fully visible and stays for 40% of the animation */
+        transform: scale(1) rotateX(15deg); /* Normal size */
+    }
+    20% {
+        opacity: 0; /* Start fading out around halfway */
+        transform: scale(0.8) rotateX(15deg); /* Shrink slightly */
+    }
+    30% {
+        opacity: 0; /* Fully invisible */
+        transform: scale(0.8) rotateX(15deg); /* Still shrunken */
+    }
+    50% {
+        opacity: 1; /* Fade back in at the end */
+        transform: scale(1) rotateX(15deg); /* Return to normal size */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-right {
+    flex: 1;
+    max-width: 50%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+.category-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 30px; 
+    margin-bottom: 20px;
+}
+
+
+
+.category-button {
+    display: block;
+    width: 200px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.category-button span  {
+    background-image: linear-gradient(to right, #fefaf9, #e138de); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+/* Hover effect */
+.category-button:hover {
+    transform: translateY(-10px);
+}
+
+
+.explore-all {
+    position: absolute; /* Positioning it relative to the hero section */
+    bottom: 10%; /* Adjust this to move it vertically as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Ensures it's centered */
+}
+
+.explore-all-button {
+    background-color: white;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.explore-all-button:hover {
+    background-color: #bbbbbb;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero-left, .hero-right {
+        max-width: 100%;
+    }
+    
+    .category-buttons {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        justify-content: center;
+    }
+}
+
+.latest-events, .featured-events {
+    padding: 50px 100px;
+    
+}
+
+.latest-events h2, .featured-events h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.events-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; /* Space between cards */
+    margin-bottom: 20px;
+}
+
+.event-card {
+    background-color: white;
+    padding: 20px; /* Adjust padding */
+    height: 250px; /* Optional: you may want to adjust this */
+    width: 100%; /* Use 100% width instead of fixed width */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left; /* Keep this for left alignment */
+}
+
+.event-card h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 0 10px 0; /* Remove extra margin to reduce space */
+}
+
+.event-card p {
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: hsl(0, 0%, 53%);
+    margin: 30px 0; /* Add margin for spacing */
+}
+
+.event-card button {
+    padding: 10px 20px;
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make button full width */
+    margin-top: 20px; /* Space between button and text above */
+}
+
+
+.featured-grid {
+    display: flex;
+    padding:10px 10px 0px 100px;
+    gap: 100px;
+    height:350px;
+}
+
+.featured-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width:100%;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.featured-card p {
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: hsl(0, 0%, 53%);
+    margin: 0px 0; /* Add margin for spacing */
+}
+
+.featured-card h3 {
+    padding: 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+    background-color: #222;
+    color: rgb(146, 146, 146);
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.newsletter{
+    padding:10px 0px 30px 0px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 0px;
+    border-radius: 20px;
+    border: none;
+}
+
+.newsletter button {
+    padding: 10px;
+    width: 80px;
+    border-radius: 15px;
+    border: none;
+    padding-top: 10px;
+    background-color: #673ab7;
+    color: white;
+}
+
+.navbar-footer {
+    padding: 30px 50px; 
+    background-color: #222;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between; /* Space between logo/container and links */
+    align-items: center; /* Center logo, brand, and links vertically */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Center logo and brand name vertically */
+}
+
+.logo img {
+    height: 30px; 
+}
+
+.brand-name-footer {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 10px;
+    color: white; 
+}
+
+.footer-links {
+    display: flex;
+    gap: 0px; /* Adjust the space between the links */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgb(146, 146, 146); /* Change color to white */
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #9b31dd; /* Change link color on hover */
+}
+
+/* Responsive Navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbar-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.language{
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    border-color: rgb(146, 146, 146);
+    border-style: solid;
+    width:100px;
+    margin:10px;
+    padding:10px;
+
+}
+.iconsdiv {
+    display: flex;
+    padding: 1px;
+    gap: 20px; /* Space between icons */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+}
+
+.icons {
+    height: 40px; /* Increased height for better visibility */
+    width: 40px; /* Increased width for better visibility */
+    border-radius: 50%; /* Ensure it's a circle */
+    background-color: grey;
+    display: flex; /* Make this a flex container */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    padding: 5px; /* Add padding inside the circle */
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.adjust {
+    height: 30px; 
+    width: 30px; 
+    padding-top:5px;
+}
+
+

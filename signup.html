@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusTrends - Student Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="nav-style.css">
+</head>
+<body>
+ 
+
+    <header>
+        <!-- Header Section -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <!-- Logo and Brand Name -->
+                <a href="#" class="logo">
+                    <img src="logo.jpg" alt="CampusTrends">
+                </a>
+                <span class="brand-name">CampusTrends</span>
+        
+                <!-- Navigation Links (Left-Aligned) -->
+                <div class="navbar-links">
+                    <a href="index.html">Home</a>
+                    <a href="#">Latest Events</a>
+                    <a href="#">Featured Events</a>
+                </div>
+            </div>
+        
+            <div class="navbar-right">
+                <!-- Login and Host buttons (Right Aligned) -->
+                <a href="student.html" class="login-button">Login</a>
+                <a href="host_login.html" class="signup-button">Host</a>
+            </div>
+        </nav>
+        
+    </header> 
+
+
+    <div class="signup-container">
+        <div class="signup-box">
+            <div class="signup-image">
+                <img src="host_login.jpg" alt="Stylized person">
+            </div>
+            <div class="signup-form">
+                <h2>Student Signup</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Enter your email to log in.</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">create password</label>
+                        <input type="password" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" id="confirm-password" placeholder="re-enter password">
+                    </div>
+                    <button type="button" class="submit-btn" onclick="window.location.href='stud_feedback.html';">Submit</button>
+
+                </form>
+                <p class="terms">By continuing, you agree to the updated Terms of Sale, Terms of Service, and Privacy Policy.</p>
+
+                <button class="google-signin">
+                    <img src="google_logo.jpeg" alt="Google logo">
+                    Continue with Google
+                </button>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>

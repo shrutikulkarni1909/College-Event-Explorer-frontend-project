@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login</title>
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+  <header>
+    <!-- Header Section -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <!-- Logo and Brand Name -->
+            <a href="#" class="logo">
+                <img src="logo.jpg" alt="CampusTrends">
+            </a>
+            <span class="brand-name">CampusTrends</span>
+    
+            <!-- Navigation Links (Left-Aligned) -->
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="#latest-events">Latest Events</a>
+                <a href="#featured-events">Featured Events</a>
+            </div>
+        </div>
+    
+        <div class="navbar-right">
+            <!-- Login and Host buttons (Right Aligned) -->
+            <a href="student.html" class="login-button">Login</a>
+            <a href="host_login.html" class="signup-button">Host</a>
+        </div>
+    </nav>
+    
+</header> 
+
+  <main>
+    <div class="login-container">
+      <div class="login-image">
+        <img src="host_login.jpg" alt="Study image">
+      </div>
+      <div class="login-form">
+        <h2>Student Login</h2>
+        <form action="/post" method="POST">
+          <!-- Email input with label and name -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <!-- Password input with label and name -->
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+          
+          <a href="stud_feedback.html"><button type="button" class="continue-btn"> continue</button></a>
+          
+          <p>or</p>
+          <button class="google-login" type="button">Continue with Google</button>
+        </form>
+        <p class="terms">By continuing, you agree to the updated Terms of Sale, Terms of Service, and Privacy Policy.</p>
+        <div class="signup">
+          <p>Don’t have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

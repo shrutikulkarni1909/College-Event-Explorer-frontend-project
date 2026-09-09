@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Event - CampusTrends</title>
+    <link rel="stylesheet" href="add_events_styles.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header >
+        <!-- Header Section -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <!-- Logo and Brand Name -->
+                <a href="#" class="logo">
+                    <img src="logo.jpg" alt="CampusTrends">
+                </a>
+                <span class="brand-name">CampusTrends</span>
+        
+                <!-- Navigation Links (Left-Aligned) -->
+                <div class="navbar-links">
+                    <a href="index.html">Home</a>
+                    <a href="#">Latest Events</a>
+                    <a href="#">Featured Events</a>
+                </div>
+            </div>
+            <div class="profile-menu">
+                <button>Welcome ITSA ▼</button>
+            </div>
+           
+        </nav>
+        
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <h2>Host Event</h2>
+            <ul class="sidebar-menu">
+                <li><a href="#event-information">Event Information</a></li>
+                <li><a href="#rules-eligibility">Rules and Eligibility</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact-details">Contact Details</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <section class="host-event">
+                <div class="form-container">
+                    <form action="/post" method="POST">
+                        <!-- Event Information Section -->
+                        <div id="event-information" class="section event-info">
+                            <h2>Event Information</h2><br>
+                            <div class="form-group">
+                                <label for="event-name">Event Name</label>
+                                <input type="text" id="event-name" name="eventName" placeholder="Code Showdown" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="hosting-college">Hosting College</label>
+                                <input type="text" id="hosting-college" name="hostingCollege" placeholder="Pune Vidyarthi Griha's COET" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="hosting-organization">Hosting Organization</label>
+                                <input type="text" id="hosting-organization" name="hostingOrganization" placeholder="ITSA" required>
+                            </div>
+                            <div class="form-group date-group">
+                                <div>
+                                    <label for="date">Date</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                <div>
+                                    <label for="day">Day</label>
+                                    <input type="text" id="day" name="day" placeholder="Wednesday" required>
+                                </div>
+                                <div>
+                                    <label for="mode">Mode</label>
+                                    <input type="text" id="mode" name="mode" placeholder="Offline" required>
+                                </div>
+                            </div>
+                            <div class="form-group date-group">
+                                <div>
+                                    <label for="app-start">Application Starts</label>
+                                    <input type="date" id="app-start" name="appStart" required>
+                                </div>
+                                <div>
+                                    <label for="deadline">Deadline</label>
+                                    <input type="date" id="deadline" name="deadline" required>
+                                </div>
+                                <div>
+                                    <label for="fees">Registration Fees</label>
+                                    <input type="text" id="fees" name="fees" placeholder="Free" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Description</label>
+                                <textarea id="description" name="description" rows="6">
+DBA Contest: Code Showdown is a three-round engineering competition that progressively challenges participant skills.
+1. First round focuses on multiple-choice questions (MCQs) to test basic programming knowledge.
+2. The second round involves solving Data Structures and Algorithmic (DSA) questions of medium difficulty.
+3. Final round presents the most difficult DSA questions.
+This event is designed to assess participants’ abilities, from foundational knowledge to advanced algorithmic thinking.
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <!-- Rules and Eligibility Section -->
+                        <div id="rules-eligibility" class="section rules-eligibility">
+                            <h2>Rules and Eligibility</h2>
+                            <ul>
+                                <li><input type="textarea" name="eligibility" value="Enter eligibilty criteria here"></li>
+                                <li><input type="textarea" name="rules" value="Enter Rules."></li>
+                            </ul>
+                        </div>
+
+                        <!-- Media Section -->
+                        <div id="media" class="section media">
+                            <h2>Media</h2>
+                            <div class="image-upload">
+                                <img src="hackathon.png" alt="Hackathon Image">
+                                <input type="file" id="media-upload" name="imageUrl" accept="image/*">
+                                <p>Do not add more than two images. Images should be in jpg or png format.</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact Details Section -->
+                        <div id="contact-details" class="section contact-details">
+                            <h2>Contact Details</h2>
+                            <div class="form-group">
+                                <label for="contact-person">Contact Person</label>
+                                <input type="text" id="contact-person" name="contactPerson" placeholder="Shreeman Joshi" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Contact Email</label>
+                                <input type="email" id="email" name="contactEmail" placeholder="xyz@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="whatsapp">WhatsApp No.</label>
+                                <input type="text" id="whatsapp" name="whatsappNumber" placeholder="1234567890" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="community-link">Community Link</label>
+                                <input type="text" id="community-link" name="communityLink" placeholder="whatsapp.link" required>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="submit-btn">
+                            <a href="add_event_feedback.html"><button type="button">Submit</button></a>
+                            
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

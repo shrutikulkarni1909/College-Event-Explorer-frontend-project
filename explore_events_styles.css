@@ -1,0 +1,159 @@
+.button-container{
+   margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  
+}
+.search-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.horizontal-form {
+    position: absolute;
+    display: flex; /* Enables horizontal alignment */
+    align-items: center; /* Align items vertically in the middle */
+    gap: 10px; /* Space between input fields */
+    top: 150px;
+    left: 200px;
+}
+
+.horizontal-form input {
+    height: 30px;
+    padding: 5px;
+    justify-content: center;
+    width: 500px;
+    height: 30px;
+    background-color:#FAFAFB;
+    box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12), 0px 0px 1px rgba(23, 26, 31, 0.07);
+    border-radius: 4px;
+}
+
+.horizontal-form button {
+    height: 40px;
+    width: 80px;
+    padding: 5px 10px;
+    background-color: #6c63ff;
+    color: #FAFAFB;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.center-text{
+   
+    text-align: center;
+}
+
+.filter-container{
+    position: absolute;
+    height: 400px;
+    width: 276px;
+    margin-left: 50px;
+    top: 230px;
+    left: calc(50% - 276px/2 - 475px);
+    box-shadow:  0px 0px 2px rgba(23, 26, 31, 0.12), 0px 0px 1px rgba(23, 26, 31, 0.07);
+    background-color:#FAFAFB;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 4px;
+   
+
+}
+
+.filter-container h3{
+    font-size: medium;
+    font-weight:bold;
+    font-family: 'lexand';
+}
+
+.divider{
+    position: absolute;
+    width: 276px;
+    height: 0px;
+    left: 5px;
+   
+    border: 1px solid #DEE1E6;
+}
+
+.divider.one{
+    top:auto;
+}
+
+.divider.two{
+    top:auto ;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-options label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+/* Style for the entire events list */
+.events-list {
+    display: flex;
+    flex-direction: column; /* Stack events vertically */
+    gap: 20px; /* Space between each event */
+    padding: 20px;
+}
+
+/* Style for individual event containers */
+.event-container {
+    position: relative;
+    display: flex; /* Align image and content side by side */
+    align-items: center; /* Vertically center the content */
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    width: 800px;
+  
+    left: 180px;
+    height: 190px;
+    margin: 0 auto; /* Center each event */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.event-container:hover{
+    transform: scale(1.1);
+}
+/* Style for the event image */
+.eveimg {
+    width: 400px; /* Set the image width */
+    height: 190px; /* Set the image height */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 4px;
+    margin-right: 20px; /* Add space between the image and content */
+}
+
+/* Style for the event text content */
+.content {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+}
+
+.content h4, .content h5 {
+    margin: 5px 0;
+    color:#6c63ff; /* Text color */
+}
+
+.content h4 {
+    font-size: 1.4rem;
+}
+
+.content h5 {
+    font-size: 1rem;
+    color: #666; /* Lighter color for additional details */
+}

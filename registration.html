@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="#" class="logo">
+                    <img src="logo.jpg" alt="CampusTrends Logo">
+                </a>
+                <span class="brand-name">CampusTrends</span>
+            </div>
+            
+            <div class="navbar-center">
+                <a href="index.html">Home</a>
+                <a href="#">Latest Events</a>
+                <a href="#">Featured Events</a>
+            </div>
+            
+            <div class="navbar-right">
+                <a href="#" class="login-button">Login</a>
+                <a href="#" class="host-button">Host</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-section">
+            <h1>HACKATHON</h1>
+            <p class="subtitle">BUILDING THINGS FROM SCRATCH</p>
+        </div>
+
+</body>
+</html>
+    <div class="container">
+        <form class="registration-form">
+            <h2>Registration form</h2>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="row">
+                <div class="col form-group">
+                    <label for="mobile">Mobile no.</label>
+                    <input type="text" id="mobile" name="mobile" required>
+                </div>
+                <div class="col form-group">
+                    <label for="college">College name</label>
+                    <input type="text" id="college" name="college" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col form-group">
+                    <label for="year">Year of study</label>
+                    <select id="year" name="year" required>
+                        <option value="">Select</option>
+                        <option value="1">1st Year</option>
+                        <option value="2">2nd Year</option>
+                        <option value="3">3rd Year</option>
+                        <option value="4">4th Year</option>
+                    </select>
+                </div>
+                <div class="col form-group">
+                    <label for="branch">Branch</label>
+                    <select id="branch" name="branch" required>
+                        <option value="">Select</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="it">Information Technology</option>
+                        <option value="ec">Electronics</option>
+                        <option value="me">Mechanical</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="why-participate">Why do you want to participate?</label>
+                <textarea id="why-participate" name="why-participate" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="expectations">What are your expectations from this event?</label>
+                <textarea id="expectations" name="expectations" rows="4" required></textarea>
+            </div>
+            <div class="qr-code">
+                <img src="QR.jpeg.jpg" alt="Registration QR Code">
+                <p>Scan QR code to register</p>
+            </div>
+           <a href="register_feedback.html"><button type="button" class="submit-btn">Register</button></a> 
+        </form>
+    </div>
+    
+    <footer>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit">Subscribe</button>
+        </div>
+        <img src="campustrends_logo" alt="CompusTrends Logo" class="logo">
+        <div class="footer-links">
+            <a href="#">About us</a>
+            <a href="#">Help Center</a>
+            <a href="#">Contact us</a>
+            <a href="#">FAQs</a>
+        </div>
+    </footer>
+</body>
+</html>

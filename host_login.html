@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>host_login</title>
+    <link rel="stylesheet" href="styleddd.css">
+    <link rel="stylesheet" href="nav-style.css">
+</head>
+
+<header class="container">
+    <!-- Header Section -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <!-- Logo and Brand Name -->
+            <a href="#" class="logo">
+                <img src="logo.jpg" alt="CampusTrends">
+            </a>
+            <span class="brand-name">CampusTrends</span>
+    
+            <!-- Navigation Links (Left-Aligned) -->
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="#">Latest Events</a>
+                <a href="#">Featured Events</a>
+            </div>
+        </div>
+    
+        <div class="navbar-right">
+            <!-- Login and Host buttons (Right Aligned) -->
+            <a href="student.html" class="login-button">Login</a>
+            <a href="host_login.html" class="signup-button">Host</a>
+        </div>
+    </nav>
+    
+</header> 
+<body>
+    <div class="cont">
+        <main class="flex-container">
+            <aside>
+                <img src="host_login.jpg" alt="host image here" class="image-curve">
+            </aside>
+    
+            <section class="right">
+                <h2><span class="padded-text">Host Login</span></h2>
+                <h4><span class="padded-text">Login using authorised college Mail ID</span></h4>
+                <form action="/post" method="post">
+                    <label for="mail"><span class="padded-text">College Mail-ID</span></label><br><br>
+                    <input type="text" id="mail" name="mail" placeholder="Enter college Mail ID" class="rounded-input-button class"  >
+                    <br><br><br>
+                    <label for="psw"><span class="padded-text">Enter password</span></label><br><br>
+                    <input type="password" id="psw" name="psw" placeholder="Enter Password" class="rounded-input-button class"><br><br>
+                   
+                </form>
+                <a href="signup_feedback.html"><button type="button" class="purple-rounded-submit class"> continue</button></a>
+                <br><br><br>
+                 <div class="divider"><span>OR</span></div> 
+                 <div class="middle">
+                    <a href="#"><button type="button" class="rounded-button">Continue with Google</button></a><br><br>
+                 </div>
+                
+                 <div class="middle">   
+                        <h5>Don't have an account?</h5>
+                        <a href="host_signup.html"><button type="button" class="rounded-button">Signup now</button></a>
+                
+                   
+                </div>
+            
+                
+            </section>
+
+           
+        </main>
+        
+    </div>
+</body>
+
+
+</html>
